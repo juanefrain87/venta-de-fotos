@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import "../estiloFotos.css/estilo2.css";
-import foto from "../imagenes/foto.jpg";
-import modelo2 from "../imagenes/modelo2.jpeg";
+import foto from "../imagenes/foto.webp";
+import modelo2 from "../imagenes/modelo2.webp";
 import modelo10 from "../imagenes/modelo10.jpeg";
 import modelo3 from "../imagenes/modelo3.webp";
 import modelo4 from "../imagenes/modelo4.jpeg";
@@ -13,6 +13,9 @@ import modelo9 from "../imagenes/modelo9.jpeg";
 import { ImaContext } from "./Agregar";
 import { useContext } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
+
 const SesionIniciada = () => {
 
 
@@ -127,7 +130,7 @@ useEffect(() => {
   return (
     <Fragment>
       
-      <form  onSubmit={handle}> 
+      <form  onSubmit={handle} ac> 
       <input type="file" name="cover" onChange={cargarimag}></input>
             <input type="text" onChange={funcion} name="modelo"></input>
 
@@ -144,7 +147,7 @@ useEffect(() => {
             {carrito.map((elemento) => (
         <h1 key={elemento}>{elemento}  </h1>
       ))}
-<h1> total {total}</h1>
+<h1> total de compras$ {total}</h1>
 
 <div className="padre"> 
       {ima.map((e) => (
@@ -157,8 +160,9 @@ useEffect(() => {
         <div className="back">
           <h1 className="contenedorprecio">{e.precio}</h1>
          <p className="tex">  {e.id} {e.titulo} {e.descripcion} Soy una modelo excepcional, reconocida por mi talento y belleza. Mi tez morena resalta mis rasgos distintivos y añade un encanto único a mi apariencia. Con mi estatura alta, destaco en las pasarelas y sesiones fotográficas, capturando la atención de todos con mi presencia magnética.</p>   
+        <Link to={"/datos"}>  
         <input type="submit" className="comprar" value="comprar" onClick={() => comprar(e.precio)}></input>
-        
+        </Link>
        
          </div>
         </div>

@@ -18,6 +18,7 @@ const Login = () => {
   const [y, sety] = useState(false);
 
   const modificarestado = (e) => {
+    console.log(e)
     setlog({
       ...log,
       [e.target.name]: e.target.value
@@ -71,7 +72,7 @@ const Login = () => {
 
       </form>
       {y && <span className="error">Contraseña inválida</span>}
-      <h2>jddjdjdj</h2>
+      
     </Fragment>
   );
 };

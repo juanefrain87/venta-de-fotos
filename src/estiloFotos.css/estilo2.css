@@ -1,15 +1,17 @@
 body {
     padding: 50px 0 ;
-    display: flex;
     flex-wrap: wrap;
+    background-color: rgb(25, 25, 112,) !important;
   }
 
+ 
   
   .padre{
     display: flex;
     width: 100%;
   padding: 39px;
     flex-wrap: wrap;
+    background-color: #B4D0D3;
   }
   
   .contenedorimagenes {
@@ -40,7 +42,7 @@ width: 400px;
 
   img{
     position: relative;
-    width: 100%;
+    width: 100% !important;
    height: 300px;
     
   }
