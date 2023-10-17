@@ -5,7 +5,7 @@ import modelo2 from "../imagenes/modelo2.webp";
 import modelo10 from "../imagenes/modelo10.jpeg";
 import modelo3 from "../imagenes/modelo3.webp";
 import modelo4 from "../imagenes/modelo4.jpeg";
-import modelo5 from "../imagenes/modelo5.jpeg";
+import modelo5 from "../imagenes/model5.jpeg";
 import modelo6 from "../imagenes/modelo6.jpeg";
 import modelo7 from "../imagenes/modelo7.jpeg";
 import modelo8 from "../imagenes/modelo8.jpeg";
